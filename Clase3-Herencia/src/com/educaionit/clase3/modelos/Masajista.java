@@ -15,6 +15,13 @@ public class Masajista extends SeleccionFutbol {
 		this.anioExperiencia = anioExperiencia;
 	}
 
+	//implementando o especializando  el metodo abstracto de la clase padre 
+	@Override
+	public void entrenamiento() {
+		System.out.println("Da asisitenci ane el entrenamiento (Clase masajista )");		
+	}
+
+	
 	public void darMasaje() {
 		System.out.println("Dar masaje() => clase hija masajista");
 	}
@@ -66,5 +73,6 @@ public class Masajista extends SeleccionFutbol {
 	public void setAnioExperiencia(int anioExperiencia) {
 		this.anioExperiencia = anioExperiencia;
 	}
+
 
 }

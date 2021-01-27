@@ -14,12 +14,18 @@ public class Entrenador extends SeleccionFutbol {
 		this.idFederacion = idFederacion;
 	}
 
-	public void dirigirPArtido() {
-		System.out.println("Dirigir Partido = > Clase Hija Entrenador");
+	@Override
+	public void entrenamiento() {
+		System.out.println("Realiza un entrenamiento (Clase hija entrenador)");
+	}
+	//pisamos el metodo de la clase padre 
+	@Override
+	public void partidoFutbol() {
+		System.out.println("DpartidoFutbol = > Clase Hija Entrenador");
 	}
 
-	public void dirigirEntrenamiento() {
-		System.out.println("Dirigir Entrenamiento = > Clase Hija Entrenador");
+	public void planificarEntrenamiento() {
+		System.out.println("Planificar Entrenamiento = > Clase Hija Entrenador");
 	}
 
 	public int getId() {
@@ -61,5 +67,6 @@ public class Entrenador extends SeleccionFutbol {
 	public void setIdFederacion(String idFederacion) {
 		this.idFederacion = idFederacion;
 	}
+
 
 }

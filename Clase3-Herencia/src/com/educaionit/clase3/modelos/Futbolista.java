@@ -9,20 +9,27 @@ public class Futbolista extends SeleccionFutbol {
 	public Futbolista() {
 		super();
 	}
-	
+
 	public Futbolista(int id, String nombre, String apellido, int edad, int dorsal, String demarcacion) {
-		//invocamos a los atributos de la clase padre 
+		// invocamos a los atributos de la clase padre
 		super(id, nombre, apellido, edad);
 		this.dorsal = dorsal;
-		this.demarcacion = demarcacion;		
+		this.demarcacion = demarcacion;
 	}
 
-	public void jugarPartido() {
-		System.out.println("JugarPartido() => Clase Hija Futbolista");
+	@Override
+	public void entrenamiento() {
+		System.out.println("Realiza un entrenamiento () => Clase Hija Futbolista");
 	}
 
-	public void entrenar() {
-		System.out.println("entrenar() => Clase Hija Futbolista");
+	// piso el metodo de la clase padre
+	@Override
+	public void partidoFutbol() {
+		System.out.println("Jugar un Partido() => Clase Hija Futbolista");
+	}
+
+	public void entrevista() {
+		System.out.println("Da una Entrevista() => Clase Hija Futbolista");
 	}
 
 	public int getId() {

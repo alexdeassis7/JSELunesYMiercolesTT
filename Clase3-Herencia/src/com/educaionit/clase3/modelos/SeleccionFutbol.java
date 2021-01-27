@@ -1,7 +1,7 @@
 package com.educaionit.clase3.modelos;
 
-//Clase padre o SuperClase
-public class SeleccionFutbol {
+//Clase padre abstract
+public abstract class SeleccionFutbol {
 
 	protected int id;
 	protected String nombre;
@@ -24,6 +24,13 @@ public class SeleccionFutbol {
 
 	public void viajar() {
 		System.out.println("Viajar() => Clase Padre");
+	}
+
+	//METODO ABSTRACTO : no se implementa en la clase abstracta pero si en las clase hijas
+	public abstract void entrenamiento() ; 
+	
+	public void partidoFutbol() {
+		System.out.println("partidoFutbol() => Clase Padre");
 	}
 
 	public int getId() {
